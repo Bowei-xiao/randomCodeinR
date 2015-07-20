@@ -8,7 +8,7 @@ gcd = function(x,y) {
 
 egyFrac = function(a,b,lane=NULL){
 # Main function. a is the numerator, and b is the denominator
-# assume a, b be integer and a<b
+# assume a, b be positive integer and a<b
 # Example: 2/5 -> egyFrac(2,5)
   if (a==1){
     lane = paste0(lane,'1/',b)
