@@ -1,4 +1,5 @@
 # Function to calculate the Egyptian Fraction for any rational fraction <1
+# rational fraction here merely meaning that fraction is representing a rational number
 gcd = function(x,y) {
 # Helper Function get the greatest common divisor, assuming x>=y  
   r = x%%y;
@@ -7,6 +8,8 @@ gcd = function(x,y) {
 
 egyFrac = function(a,b,lane=NULL){
 # Main function. a is the numerator, and b is the denominator
+# assume a, b be integer and a<b
+# Example: 2/5 -> egyFrac(2,5)
   if (a==1){
     lane = paste0(lane,'1/',b)
     return(lane)
